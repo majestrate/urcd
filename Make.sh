@@ -12,6 +12,8 @@ if [ -e '/usr/include/python2.7/' ]; then
  PYTHON_HEADERS='/usr/include/python2.7'
 elif [ -e '/usr/local/include/python2.7/' ]; then
  PYTHON_HEADERS='/usr/local/include/python2.7'
+elif [ -e '/usr/pkg/include/python2.7/' ]; then
+ PYTHON_HEADERS='/usr/pkg/include/python2.7'
 else
  echo $0': fatal error: no suitable python headers exists' 1>&2
  exit 255
